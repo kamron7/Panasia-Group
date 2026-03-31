@@ -1,0 +1,10 @@
+@media print{
+
+a.printer, .docs-list, .news-view__top, .news-view-imgBx, .news_footer{display: none;}
+a{text-decoration: none;color: #000;}
+.print-img{display: block !important;margin-bottom: 15px;text-align: center;}
+.print-img img{}
+#newsPrint_1{margin-top: 10px;}
+.news-content .content p{font-size: 18px !important;}
+#slider-news, .gmap, #map_canvas, .news-slider, .news-content__foter, .docs-list{display: none;}
+}

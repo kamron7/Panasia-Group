@@ -1,0 +1,39 @@
+#sound_tooltip {
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s;
+
+    font-size: 18px;
+    position: fixed;
+    top: 0;
+    /* overflow: hidden; */
+    z-index: 9999;
+}
+
+#sound_tooltip.show {
+    user-select: none;
+    pointer-events: all;
+    opacity: 1;
+    cursor: pointer;
+}
+
+.sound_tooltip_img_container.spin {
+    animation: rotateCicle 1.3s linear infinite forwards;
+}
+
+.no-img-block {
+    border-radius: 6px;
+    background-color: #ddd;
+    padding: 6px;
+    display: inline-block;
+    font-size: 13px;
+}
+
+@keyframes rotateCicle {
+    from {
+        transform: rotate(0);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}

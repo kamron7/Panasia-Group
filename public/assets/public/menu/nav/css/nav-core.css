@@ -1,0 +1,96 @@
+.nav-lock-scroll {overflow: hidden;-webkit-overflow-scrolling: touch;position: fixed;height: 100%;width: 100%;}
+.mobile-menu .nav {
+    display: none;
+    position: fixed;
+    top: 42px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 9;
+    overflow-x: hidden;
+    /*  overflow-y: auto;*/
+}
+
+.mobile-menu .nav ul {
+	display: block;
+	position: relative;
+	zoom: 1;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.mobile-menu .nav a,
+.mobile-menu .nav a:hover,
+.mobile-menu .nav a:active,
+.mobile-menu .nav a:visited {
+	display: block;
+	position: relative;
+}
+
+/*@media only screen and (min-width: 960px) {
+
+.mobile-menu .nav {
+	display: block;
+	position: relative;
+	bottom: auto;
+	overflow: visible;
+}
+
+.mobile-menu .nav li {
+	position: relative;
+	white-space: nowrap;
+}
+
+.mobile-menu .nav > ul > li {
+	display: inline-block;
+}
+
+.mobile-menu .nav ul {
+	display: block;
+}
+
+.mobile-menu .nav ul ul {
+	display: none;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	z-index: 901;
+}
+
+.mobile-menu .nav ul ul ul {
+	top: 5px;
+	left: 95%;
+	z-index: 902;
+}
+
+.mobile-menu .nav ul ul ul ul {
+	z-index: 903;
+}
+
+.mobile-menu .nav ul ul ul ul ul {
+	z-index: 904;
+}
+
+.mobile-menu .nav ul ul li.nav-left > ul {
+	left: auto;
+	right: 95%;
+}
+
+.mobile-menu .nav-no-js .nav li:hover > ul {
+	display: block;
+}
+
+}*/
+
+@media only screen and (max-width: 1200px) {
+
+.nav-no-js .mobile-menu .nav-button:hover + .mobile-menu .nav,
+.nav-no-js .mobile-menu .nav:hover,
+.nav-no-js .mobile-menu .nav-button:hover + .mobile-menu .nav +  .mobile-menu .nav-close,
+.nav-no-js .mobile-menu .nav:hover + .mobile-menu .nav-close {
+	display: block;
+}
+
+}
+

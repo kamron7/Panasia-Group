@@ -1,0 +1,209 @@
+
+:root {
+    --od-primary: #003366;
+    --od-gold: #d3a102;
+    --od-bg: #f8f9fa;
+    --od-card-bg: #ffffff;
+    --od-text: #1f2937;
+    --od-text-muted: #6b7280;
+    --od-border: #000000;
+}
+
+
+.od-card {
+    background: var(--od-card-bg);
+    /*border-radius: 12px;*/
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+    margin-bottom: 24px;
+    border: 1px solid var(--od-border);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    position: relative;
+}
+
+.od-card:hover {
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    border-color: var(--od-gold);
+}
+
+.od-card-header {
+    padding: 16px 24px;
+    background: linear-gradient(to right, #ffffff, #fafafa);
+    border-bottom: 1px solid var(--od-border);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.od-badge-date {
+    font-size: 0.85rem;
+    color: var(--od-text-muted);
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.od-badge-downloads {
+    background-color: #D3A102;
+    color: #fff;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    box-shadow: 0 2px 4px rgba(0,51,102, 0.2);
+}
+
+.od-card-body {
+    padding: 24px;
+    flex-grow: 1;
+}
+
+.od-title-link {
+    text-decoration: none;
+    display: block;
+}
+
+.od-main-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--od-text);
+    margin-bottom: 12px;
+    line-height: 1.4;
+    transition: color 0.2s;
+}
+
+.od-card:hover .od-main-title {
+    color: var(--od-gold);
+}
+
+.od-meta-info {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.od-org-name {
+    font-size: 1rem;
+    color: var(--od-text-muted);
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.od-id-tag {
+    font-size: 0.9rem;
+    color: #9ca3af;
+    font-family: monospace;
+    background: #f3f4f6;
+    padding: 2px 8px;
+    border-radius: 4px;
+    width: fit-content;
+}
+
+.od-card-footer {
+    padding: 16px 24px;
+    background-color: #f9fafb;
+    border-top: 1px solid var(--od-border);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.od-category {
+    font-size: 0.95rem;
+    color: var(--od-primary);
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    max-width: 40%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+.od-files-wrapper {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.od-file-btn {
+    text-decoration: none;
+    font-size: 0.75rem;
+    font-weight: 700;
+    padding: 6px 12px;
+    border-radius: 6px;
+    border: 1px solid var(--od-border);
+    background: #fff;
+    color: var(--od-text);
+    transition: all 0.2s;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 50px;
+}
+
+.od-file-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    color: #fff;
+    border-color: transparent;
+}
+
+.file-xml:hover { background-color: #e67e22; }
+.file-csv:hover { background-color: #27ae60; }
+.file-json:hover { background-color: #f1c40f; color: #000; }
+.file-xls:hover { background-color: #2ecc71; }
+.file-rdf:hover { background-color: #3498db; }
+
+
+.od-pagination-wrapper {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+
+.od-sidebar-sticky {
+    position: sticky;
+    top: 20px;
+}
+
+@media (max-width: 768px) {
+    .od-card-header {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .od-card-footer {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+
+    .od-category {
+        max-width: 100%;
+        margin-bottom: 8px;
+
+    }
+    .od-files-wrapper {
+        width: 100%;
+        justify-content: flex-start;
+    }
+
+    .od-file-btn {
+        flex-grow: 1;
+        text-align: center;
+    }
+}

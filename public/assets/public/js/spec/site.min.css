@@ -1,0 +1,92 @@
+/*#VisualHeader{font-family:Arial,sans-serif;font-size:14px;letter-spacing:0;line-height:normal !important;position:relative;text-shadow:none;text-align:center;top:0;margin:0 auto;z-index:999999;background-color:white;display:none}*/#VisualHeader .vi_panel{position:relative;border:1px solid #FBF5F6;border-radius:15px;display:flex;    justify-content: center;color:#000;margin:0 auto;text-shadow:#fff 0 1px 0;padding:2px;/*height:50px*/}#VisualHeader .vi_panel #vi-fontsize{display:inline-block;padding:5px}#VisualHeader .vi_panel #vi-fontsize a{color:#000;letter-spacing:0;margin:2px;outline:0;padding:5px;text-decoration:none}#VisualHeader .vi_panel #vi-fontsize a:hover{background-color:#000;border-radius:3px;color:#fff}#VisualHeader .vi_panel #vi-fontsize .active{outline:0;background-color:#000;color:#fff;position:relative;border-radius:3px}#VisualHeader .vi_panel #vi-fontsize #vi-fontsize-smallest{font-size:14px}#VisualHeader .vi_panel #vi-fontsize #vi-fontsize-small{font-size:16px}#VisualHeader .vi_panel #vi-fontsize #vi-fontsize-normal{font-size:18px}#VisualHeader .vi_panel #vi-fontsize #vi-fontsize-big{font-size:22px}#VisualHeader .vi_panel #vi-fontsize #vi-fontsize-bigest{font-size:26px}#VisualHeader .vi_panel #vi-image{display:inline-block;padding:5px;font-size:25px;color:black}#VisualHeader .vi_panel #vi-image a{color:black;width:26px}#VisualHeader .vi_panel #vi-image a img{padding-bottom:5px}#VisualHeader .vi_panel #vi-image .active{/*border:2px dashed black;*/border-left:none;border-right:none}#VisualHeader .vi_panel #vi-image a:hover{color:#2a1ca1}#VisualHeader .vi_panel #vi-colors{display:inline-block;padding:5px;font-size:20px}#VisualHeader .vi_panel #vi-colors a{color:#000;letter-spacing:0;margin:2px;outline:0;padding:5px;text-decoration:none}#VisualHeader .vi_panel #vi-colors a:hover{}#VisualHeader .vi_panel #vi-colors .active{font-size:25px}#VisualHeader .vi_panel #vi-colors #vi-color1{background-color:#fff;color:#000;border:1px solid #000;border-radius:3px;font-weight:700;text-shadow:none}#VisualHeader .vi_panel #vi-colors #vi-color2{background-color:#000;color:#fff;border:1px solid #000;border-radius:3px;font-weight:700;text-shadow:none}#VisualHeader .vi_panel #vi-colors #vi-color3{background-color:#3b2716;color:#a9e44d;border:1px solid #000;border-radius:3px;font-weight:700;text-shadow:none}#VisualHeader .vi_panel #vi-close{display:inline-block;padding:5px 10px;font-size:20px}
+
+#vi-image3{display: none;}
+#VisualHeader .vi_panel {
+    border: 0;
+    border-bottom: 1px solid #FBF5F6;
+    padding: 8px 0;
+}
+#VisualHeader .vi_panel > span{
+  margin-right: 20px;
+}
+#vi-fontsize .spec-title{margin-top: 10px !important;padding-right: 10px;}
+#VisualHeader .vi_panel span.spec-title{
+    font-size: 16px;
+    margin-top: 8px;
+    display: block;
+    float: left;
+}
+#vi-close{
+    cursor: pointer;    
+}
+#vi-close span{
+    font-size: 16px;
+    border-bottom: 1px dotted;
+    padding-bottom: 2px;
+}
+#VisualHeader .vi_panel #vi-close {
+    display: inline-block;
+    padding: 13px 10px;
+    font-size: 12px;
+    float: right;
+    text-align: right;
+    padding-right: 0;
+}
+#VisualHeader .vi_panel #vi-colors {
+    display: inline-block;
+    padding: 5px;
+    font-size: 12px;
+}
+#VisualHeader .vi_panel #vi-colors #vi-color1 {
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #000;
+    border-radius: 3px;
+    font-weight: 700;
+    text-shadow: none;
+    display: block;
+    float: left;
+        margin: 2px 5px;
+}
+#VisualHeader .vi_panel #vi-colors #vi-color2 {
+    background-color: #000;
+    color: #fff;
+    border: 1px solid #000;
+    border-radius: 3px;
+    font-weight: 700;
+    text-shadow: none;
+    display: block;
+    float: left;
+    margin: 2px 5px;
+}
+#VisualHeader .vi_panel #vi-colors #vi-color3 {
+    background-color: #3b2716;
+    color: #a9e44d;
+    border: 1px solid #000;
+    border-radius: 3px;
+    font-weight: 700;
+    text-shadow: none;
+    display: block;
+    float: left;
+    margin: 2px 5px;
+}
+#VisualHeader .vi_panel #vi-colors .active {
+    font-size: 12px;
+    transform: scale(1.1);
+}
+#VisualHeader .vi_panel #vi-image a img {
+    padding-bottom: 0;
+    width: 30px;
+}
+#VisualHeader .vi_panel #vi-image a {
+    color: black;
+    width: 26px;
+    float: left;
+    margin: 0 5px;
+}
+#VisualHeader .vi_panel #vi-image .active {
+    /* border: 2px dashed black; */
+    border-left: none;
+    border-right: none;
+    transform: scale(1.15);
+}

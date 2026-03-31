@@ -1,0 +1,267 @@
+.new-navbar a {
+    color: #000;
+}
+
+.has-submenu i.fa-angle-right {
+    position: absolute;
+    right: 10px;
+    font-size: 18px;
+    bottom: 50%;
+    color: #ffffff;
+    transform: translateY(50%);
+    -webkit-transform: translateY(50%);
+    -moz-transform: translateY(50%);
+    -ms-transform: translateY(50%);
+    -o-transform: translateY(50%);
+}
+
+.new-navbar .nav-item .dropdown-menu li {
+    padding: 0 20px;
+}
+
+.dropdown-item:focus,
+.dropdown-item:hover {
+    color: #ffffff;
+    background-color: #1f3c88;
+}
+
+.new-navbar .dropdown-menu .nav-item-2 a.dropdown-item {
+    font-size: 14px;
+    line-height: 21px;
+    padding: 10px 0;
+    border-bottom: 1px solid #2748a0;
+    opacity: 0.7;
+    transition: 0.2s;
+    -webkit-transition: 0.2s;
+    -moz-transition: 0.2s;
+    -ms-transition: 0.2s;
+    -o-transition: 0.2s;
+}
+
+.new-navbar .dropdown-menu .nav-item-2:hover>a.dropdown-item {
+    opacity: 1;
+}
+
+.new-navbar .dropdown-menu>.nav-item-2:last-child>a.dropdown-item {
+    border: none;
+}
+
+.new-navbar .nav-item a {
+    font-size: 14px;
+    line-height: 21px;
+
+    background: transparent !important;
+    /* color: #fff;*/
+}
+
+.new-navbar .nav-item a .fa-angle-down {
+    padding-left: 10px;
+}
+
+.new-navbar .dropdown-menu {
+    border-color: transparent;
+}
+
+.new-navbar .nav-item .dropdown-menu {
+    top: 45px !important;
+    /*left: 30px!important;*/
+    background: #1b285c;
+    min-width: 285px !important;
+    border-radius: 4px;
+    /*margin: 0;*/
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    min-height: 10px;
+    color: #ffffff;
+}
+
+.new-navbar .nav-item .dropdown-menu a {
+    color: #ffffff;
+    opacity: unset !important;
+}
+
+.new-navbar .nav-item .dropdown-menu a:hover {
+    background-size: cover;
+    background-color: #ffffff !important;
+    color: #212121;
+
+}
+
+.new-navbar .nav-item .dropdown-menu a {
+    padding: 10px 20px !important;
+    border-radius: 4px !important;
+}
+
+.new-navbar .nav-item .dropdown-menu li {
+    padding: 0;
+}
+
+.new-navbar .nav-item .dropdown-menu {
+    padding: 0;
+}
+
+.new-navbar .dropdown-menu>.nav-item-2>a.dropdown-item {
+    border: 0;
+}
+
+/* .header__lang .dropdown-menu-l a:hover {
+    background-color: #ffffff;
+    color: #212121;
+} */
+
+.new-navbar .nav-item>.dropdown-menu::before {
+    /*content: "";
+    position: absolute;
+    left: 50%;
+    top: -10px;
+    margin-left: -10px;
+    border: 10px solid transparent;
+    border-top-width: 0;
+    border-bottom-color: #1f3c88;
+    left: 15%;*/
+}
+
+.new-navbar .nav-item .dropdown .dropdown-menu {
+    /*top: auto !important;*/
+    margin-top: -45px !important;
+}
+
+/* .new-navbar .nav-item-2 .dropdown-menu{top: auto !important;}
+.new-navbar .nav-item-2 a:hover{background: #fff;color: #000;} */
+.navbar-nav.sm-collapsible .sub-arrow {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    margin: -0.7em 0.5em 0 0;
+    border: 1px solid rgba(0, 0, 0, .1);
+    border-radius: .25rem;
+    padding: 0;
+    width: 2em;
+    height: 1.4em;
+    font-size: 1.25rem;
+    line-height: 1.2em;
+    text-align: center;
+}
+
+.navbar-nav.sm-collapsible .sub-arrow::before {
+    content: '+';
+}
+
+.navbar-nav.sm-collapsible .show>a>.sub-arrow::before {
+    content: '-';
+}
+
+.navbar-dark .navbar-nav.sm-collapsible .nav-link .sub-arrow {
+    border-color: rgba(255, 255, 255, .1);
+}
+
+/* make sure there's room for the carets */
+.navbar-nav.sm-collapsible .has-submenu {
+    padding-right: 3em;
+}
+
+/* keep the carets properly positioned */
+.navbar-nav.sm-collapsible .nav-link,
+.navbar-nav.sm-collapsible .dropdown-item {
+    position: relative;
+}
+
+
+/* Nav carets in expanded mode */
+.navbar-nav:not(.sm-collapsible) .nav-link .sub-arrow {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin-left: .255em;
+    vertical-align: .255em;
+    border-top: .3em solid;
+    border-right: .3em solid transparent;
+    border-left: .3em solid transparent;
+    display: none;
+}
+
+/* point the arrows up for .fixed-bottom navbars */
+.fixed-bottom .navbar-nav:not(.sm-collapsible) .nav-link .sub-arrow,
+.fixed-bottom .navbar-nav:not(.sm-collapsible):not([data-sm-skip]) .dropdown-toggle::after {
+    border-top: 0;
+    border-bottom: .3em solid;
+}
+
+
+/* Dropdown carets in expanded mode */
+.navbar-nav:not(.sm-collapsible) .dropdown-item .sub-arrow,
+.navbar-nav:not(.sm-collapsible):not([data-sm-skip]) .dropdown-menu .dropdown-toggle::after {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: 0;
+    height: 0;
+    margin-top: -.3em;
+    margin-right: 1em;
+    border-top: .3em solid transparent;
+    border-bottom: .3em solid transparent;
+    border-left: .3em solid;
+    display: none;
+}
+
+/* make sure there's room for the carets */
+.navbar-nav:not(.sm-collapsible) .dropdown-item.has-submenu {
+    padding-right: 2em;
+}
+
+
+/* Scrolling arrows for tall menus */
+.navbar-nav .scroll-up,
+.navbar-nav .scroll-down {
+    position: absolute;
+    display: none;
+    visibility: hidden;
+    height: 20px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.navbar-nav .scroll-up-arrow,
+.navbar-nav .scroll-down-arrow {
+    position: absolute;
+    top: -2px;
+    left: 50%;
+    margin-left: -8px;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    border-top: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-bottom: 7px solid;
+    border-left: 7px solid transparent;
+}
+
+.navbar-nav .scroll-down-arrow {
+    top: 6px;
+    border-top: 7px solid;
+    border-right: 7px solid transparent;
+    border-bottom: 7px solid transparent;
+    border-left: 7px solid transparent;
+}
+
+
+/* Add some spacing for 2+ level sub menus in collapsible mode */
+.navbar-nav.sm-collapsible .dropdown-menu .dropdown-menu {
+    margin: .5em;
+}
+
+
+/* Fix SmartMenus sub menus auto width (subMenusMinWidth/subMenusMaxWidth options) */
+.navbar-nav:not([data-sm-skip]) .dropdown-item {
+    white-space: normal;
+}
+
+.navbar-nav:not(.sm-collapsible) .sm-nowrap>li>.dropdown-item {
+    white-space: nowrap;
+}
+
+.dropdown-menu li:last-child>a.dropdown-item {
+    border: 0;
+}

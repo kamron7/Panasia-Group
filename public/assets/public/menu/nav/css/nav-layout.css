@@ -1,0 +1,250 @@
+.mobile-menu .nav-button:before,
+.mobile-menu .nav-close:before {
+	display: block;
+	text-align: center;
+}
+
+.mobile-menu .nav-button {right: 17px;font-size: 20px;color: #fff;text-align: right;}
+.mobile-menu .close-button{position: absolute !important;top: 10px;font-size: 26px;color: #fff !important;}
+.mobile-option{}
+.mobile-menu .nav-button span{    position: relative;}
+.search-mobile{ }
+.search-box-mobile{    margin: 8px;    position: relative;
+    }
+    
+.search-box-mobile input{    color: #000;
+    padding-left: 10px;
+    border: 0;
+    height: 40px;
+    width: 100%;outline: none;background: #efefef;
+    border-radius: 6px;line-height: 24px;}
+.search-box-mobile input:focus {
+    border: none;
+    -webkit-box-shadow: 0px 3px 17px -3px rgba(0,0,0,0.32);
+    -moz-box-shadow: 0px 3px 17px -3px rgba(0,0,0,0.32);
+    box-shadow: 0px 3px 17px -3px rgba(0,0,0,0.32);
+}
+.search-box-mobile button{
+        background: none;
+    border: 0;
+    outline: none;
+    position: absolute;
+        right: 8px;
+    top: -2px;
+    color: #000;
+}
+.search-box-mobile button i{color: #141414;}
+#nav-icon2 {
+    position: relative;  
+    display: inline-block;
+}
+
+#nav-icon2 span {
+  display: block;
+  position: absolute;
+  height: 3px;
+    width: 25%;
+
+  background: #fff;
+  opacity: 1;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .25s ease-in-out;
+  -moz-transition: .25s ease-in-out;
+  -o-transition: .25s ease-in-out;
+  transition: .25s ease-in-out;
+}
+
+#nav-icon2 span:nth-child(even) {
+  left: 25%;
+  border-radius: 0 9px 9px 0;
+}
+
+#nav-icon2 span:nth-child(odd) {
+  left:0px;
+  border-radius: 9px 0 0 9px;
+}
+
+#nav-icon2 span:nth-child(1), #nav-icon2 span:nth-child(2) {
+  top: 0px;
+}
+
+#nav-icon2 span:nth-child(3), #nav-icon2 span:nth-child(4) {
+  top: 7px;
+}
+
+#nav-icon2 span:nth-child(5), #nav-icon2 span:nth-child(6) {
+  top:14px;
+}
+
+.nav-lock-scroll #nav-icon2 span:nth-child(1),.nav-lock-scroll #nav-icon2 span:nth-child(6) {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.nav-lock-scroll #nav-icon2 span:nth-child(2),.nav-lock-scroll #nav-icon2 span:nth-child(5) {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.nav-lock-scroll #nav-icon2 span:nth-child(1) {
+      left: 2px;
+    top: 3px;
+}
+
+.nav-lock-scroll #nav-icon2 span:nth-child(2) {
+      left: calc(25% - 2px);
+    top: 3px;
+}
+
+.nav-lock-scroll #nav-icon2 span:nth-child(3) {
+  left: -25%;
+  opacity: 0;
+}
+
+.nav-lock-scroll #nav-icon2 span:nth-child(4) {
+  left: 100%;
+  opacity: 0;
+}
+
+.nav-lock-scroll #nav-icon2 span:nth-child(5) {
+   left: 2px;
+    top: 12px;
+}
+
+.nav-lock-scroll #nav-icon2 span:nth-child(6) {
+      left: calc(25% - 2px);
+    top: 12px;
+}
+
+.mobile-menu .nav-close {
+	display: none;
+	right: 4rem;
+	font-size: 1.9rem;
+}
+
+.mobile-menu .nav-close:before {
+	content: "\E002";
+}
+
+.mobile-menu .nav {
+	line-height: 4.4rem;
+	background: #fff;
+	color: #141414;
+}
+
+.mobile-menu .nav ul {
+	border-radius: 0 0 6px 6px;
+	background: #fff;
+}
+
+.mobile-menu .nav li ul li{border: 0;}
+
+.mobile-menu .nav ul ul ul {
+
+}
+
+.mobile-menu .nav ul ul ul ul {
+	background: #40362f;
+}
+
+.mobile-menu .nav ul ul ul ul ul {
+	background: #493e36;
+}
+
+.mobile-menu .nav li {
+	    border-top: 1px solid #efefef;
+    cursor: pointer;
+    margin: 0 10px;
+}
+
+.mobile-menu .nav li:hover > a,
+.mobile-menu .nav li.nav-active > a {
+	background: #fff;
+}
+
+.mobile-menu .nav .nav-submenu > ul {
+	margin-left: 10px;
+}
+
+.mobile-menu .nav .nav-submenu > a {
+	padding-right: 30px !important;
+}
+
+.mobile-menu .nav a,
+.mobile-menu .nav a:hover,
+.mobile-menu .nav a:active,
+.mobile-menu .nav a:visited {
+	border-radius: 6px;
+	padding: 0 15px 1px;
+	color: #8C827D;
+	text-decoration: none;
+}
+.mobile-menu .nav ul li ul a{
+        font-size: 16px;
+    line-height: 34px;
+}
+.mobile-menu .nav .nav-submenu > a:after {
+	position: absolute;
+	display: block;
+	right: 20px;
+	top: 1px;
+	content: "\f078";
+    font-family: fontawesome;
+}
+.mobile-menu .nav .nav-submenu.nav-active > a:after{content: "\f077";}
+
+@media only screen and (min-width: 1200px) {
+
+.mobile-menu .nav-button {
+	display: none;
+}
+
+.mobile-menu .nav {
+	padding: 0 !important;
+}
+
+.mobile-menu .nav > ul > li {
+	border-top: none;
+}
+
+.mobile-menu .nav li > ul {
+	box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+.mobile-menu .nav ul ul ul {
+	border-radius: 0 6px 6px 6px;
+}
+
+.mobile-menu .nav ul ul ul li:first-child {
+	border-top: none;
+}
+
+.mobile-menu .nav .nav-left > ul {
+	border-radius: 6px 0 6px 6px;
+}
+
+.mobile-menu .nav .nav-submenu li {
+	min-width: 110px;
+}
+
+.mobile-menu .nav .nav-submenu > ul {
+	margin: 0;
+}
+
+.mobile-menu .nav > ul > .nav-submenu > a:after {
+	content: "\E005";
+}
+
+.mobile-menu .nav .nav-submenu > a:after {
+	content: "\E006";
+}
+
+}
+

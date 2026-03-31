@@ -1,0 +1,40 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(grep -rn \"$faq\\\\b\\\\|$partners\\\\b\\\\|$news\\\\b\\\\|$g\\\\b\\\\|$marquee\" /var/www/vhosts/mdg.uz/panasia.mdg.uz/resources/views/)",
+      "Bash(find /var/www/vhosts/mdg.uz/panasia.mdg.uz/resources/views/components -name *.blade.php)",
+      "Bash(grep -n \"static\\\\|hardcode\\\\|@foreach\\\\|$services\\\\|services_caps\\\\|services_process\\\\|class=\"\"wts\\\\|class=\"\"cap-\\\\|section-title\\\\|section-tag\" /var/www/vhosts/mdg.uz/panasia.mdg.uz/resources/views/public/pages/services.blade.php)",
+      "Bash(/opt/plesk/php/8.2/bin/php /var/www/vhosts/mdg.uz/panasia.mdg.uz/artisan tinker --execute=\"echo DB::table\\(''main''\\)->whereIn\\(''group'',[''inv_pillars'',''svc_commodities'',''ops_table'',''ops_regions'',''ops_routes'',''ref_products'',''ups_segments'',''fr_steps'',''geo_countries'']\\)->selectRaw\\(''\\\\`group\\\\`, count\\(*\\) as cnt''\\)->groupBy\\(''group''\\)->get\\(\\)->map\\(fn\\($r\\)=>$r->group.'':''.$r->cnt\\)->implode\\('' | ''\\);\")",
+      "Bash(/opt/plesk/php/8.2/bin/php -l /var/www/vhosts/mdg.uz/panasia.mdg.uz/app/Http/Controllers/MgController.php)",
+      "Bash(sed -n '164,210p' /var/www/vhosts/mdg.uz/panasia.mdg.uz/resources/views/public/pages/investment.blade.php)",
+      "Bash(sed -n '181,210p' /var/www/vhosts/mdg.uz/panasia.mdg.uz/resources/views/public/pages/investment.blade.php)",
+      "Bash(sed -n '196,230p' /var/www/vhosts/mdg.uz/panasia.mdg.uz/resources/views/public/pages/logistics.blade.php)",
+      "Bash(sed -n '212,230p' /var/www/vhosts/mdg.uz/panasia.mdg.uz/resources/views/public/pages/logistics.blade.php)",
+      "Bash(grep -oP \"$p\\\\[''''[^'''']+''''\\\\]\" /var/www/vhosts/mdg.uz/panasia.mdg.uz/resources/views/public/pages/geography.blade.php)",
+      "Read(//var/www/vhosts/mdg.uz/panasia.mdg.uz/**)",
+      "Bash(grep -oP \"$p\\\\[''''[^'''']+''''\\\\]\" /var/www/vhosts/mdg.uz/panasia.mdg.uz/resources/views/public/pages/refinery.blade.php)",
+      "Bash(/opt/plesk/php/8.2/bin/php /var/www/vhosts/mdg.uz/panasia.mdg.uz/artisan tinker --execute=\":*)",
+      "Bash(grep -n \"geo_countries\\\\|short_content\\\\|->content\\\\|$country\" /var/www/vhosts/mdg.uz/panasia.mdg.uz/resources/views/public/pages/geography.blade.php)",
+      "Bash(/opt/plesk/php/8.2/bin/php /var/www/vhosts/mdg.uz/panasia.mdg.uz/artisan view:clear)",
+      "Bash(/opt/plesk/php/8.2/bin/php /var/www/vhosts/mdg.uz/panasia.mdg.uz/artisan cache:clear)",
+      "Bash(find /var/www/vhosts/mdg.uz/panasia.mdg.uz/resources/views/public/pages/ -name home* -o -name index* 2)",
+      "Bash(/dev/null find:*)",
+      "Bash(head -5 grep -rn \"public function home\\\\|''''home''''\" /var/www/vhosts/mdg.uz/panasia.mdg.uz/app/Http/Controllers/)",
+      "Bash(/opt/plesk/php/8.2/bin/php /var/www/vhosts/mdg.uz/panasia.mdg.uz/artisan db:seed --class=HomepageSeeder)",
+      "Bash(grep -n \"$p\\\\[''''\\\\|$home_\\\\|$about_c\\\\|$markets\\\\|$commodities\\\\|$why_cards\\\\|$home_growth\\\\|$home_entities\\\\|$home_stats\" /var/www/vhosts/mdg.uz/panasia.mdg.uz/resources/views/public/pages/home.blade.php)",
+      "Bash(grep -n \"home\\\\|hero\\\\|marquee\\\\|ticker\\\\|banner\\\\|$p\\\\[\" /var/www/vhosts/mdg.uz/panasia.mdg.uz/resources/views/layouts/public.blade.php)",
+      "Bash(grep -n \"marquee\\\\|social\\\\|ticker\" /var/www/vhosts/mdg.uz/panasia.mdg.uz/resources/views/includes/*.blade.php)",
+      "Bash(grep -n \"hero\\\\|hero-ticker\\\\|$p\\\\[''''\\\\|marquee\" /var/www/vhosts/mdg.uz/panasia.mdg.uz/resources/views/includes/header.blade.php)",
+      "Bash(grep -n \"p_lang\\\\|$p\\\\[''''\" /var/www/vhosts/mdg.uz/panasia.mdg.uz/resources/views/includes/footer.blade.php)",
+      "WebFetch(domain:panasiagroup.ae)",
+      "WebSearch",
+      "Bash(curl -s https://panasiagroup.ae/)",
+      "Bash(python3:*)",
+      "Bash(php artisan:*)",
+      "Bash(/opt/plesk/php/8.2/bin/php artisan:*)",
+      "Bash(find /var/www/vhosts/mdg.uz/panasia.mdg.uz/routes -name *.php -type f)",
+      "Bash(grep -r \"menu_admin\\\\|admin.*menu\" /var/www/vhosts/mdg.uz/panasia.mdg.uz/resources/views --include=*.blade.php --include=*.php)",
+      "Bash(/opt/plesk/php/8.2/bin/php /var/www/vhosts/mdg.uz/panasia.mdg.uz/artisan route:clear)"
+    ]
+  }
+}
